@@ -1,5 +1,5 @@
 ## Getting Started
-Primeiro comece o rondando o comando para instalar as depedências
+Primeiro comece rondando o comando para instalar as depedências
 ```bash
 npm install
 # or
