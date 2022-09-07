@@ -1,0 +1,233 @@
+{
+  "data": {
+    "setting": {
+      "data": {
+        "id": "1",
+        "attributes": {
+          "blogName": "Test blog",
+          "blogDescription": "A blog test then Idon't know what describe, it is random words just test",
+          "logo": {
+            "data": {
+              "id": "2",
+              "attributes": {
+                "alternativeText": "bob.png",
+                "url": "https://res.cloudinary.com/ddiiakz1t/image/upload/v1662119066/bob_c83cb89756.jpg"
+              }
+            }
+          },
+          "menuLink": [
+            {
+              "id": "1",
+              "link": "#texto",
+              "text": "O texto",
+              "newTab": false
+            },
+            {
+              "id": "2",
+              "link": "#link-2",
+              "text": "Link 2",
+              "newTab": false
+            }
+          ],
+          "footer": "<p>O texto da footer</p>"
+        }
+      }
+    },
+    "posts": {
+      "data": [
+        {
+          "id": "1",
+          "attributes": {
+            "slug": "blog-sobre-nextjs",
+            "title": "Blog sobre Nextjs",
+            "excerpt": "Esse é um blog que fala um pouco sobre Next e como ele funciona.",
+            "content": "Next é um framework do React.\n\n# SPA\n\n### SPA: Single Page apliccation. É gerado quando se faz uma aplicação usando apenas React por exemplo. Nesse caso a máquina cliente fica responsável por renderizar o código javascript da página (CSR: Client side rendering).\n\n# SSG\n\n### SSG: Server-site generation. Uma página estática gerada. É possível criar usando Next.js. Funciona de maneira semelhante ao SPA, porém é feito uma re build gerando arquivos HTMLs, CSS e javaScript ao invés de jogar tudo em um arquivo só como o SPA.\n\n# SSR\n\n### SSR: Server-site rendering. O contrário do SPA, não é feito a renderização na máquina cliente, pois o servidor que ficará responsável por isso, porém isso há uma desvantagem, já que quanto mais requisição você receber na sua página mais o servidor ficará responsável por elas, então o uso dele acaba sendo especifico, por exemplo para algo que você precise que fique sendo atualizado na página constantemente, então o torna não aplicável para qualquer situação.\n\n# SSG e SSR\n\n### É possível de fazer uma página hibrida misturando o SSG e SSR.\n\n# Sobre o Next\n\n![Untitled.png](https://res.cloudinary.com/ddiiakz1t/image/upload/v1662141457/Untitled_a67297dea1.png)\n\n### Tudo que estiver no arquivo /pages será considerado uma rota.\n\n```jsx\nexport default function Test() {\n    return <h1>Teste</h1>;\n}\n```\n\n### Digitando /test na url você vai acessar a rota test, como explicado acima arquivos dentro de /pages são rotas.\n\n![Untitled.png](https://res.cloudinary.com/ddiiakz1t/image/upload/v1662141495/Untitled_eb8bb2bead.png)",
+            "allowComents": true,
+            "cover": {
+              "data": {
+                "id": "3",
+                "attributes": {
+                  "alternativeText": "next-capa.png",
+                  "url": "https://res.cloudinary.com/ddiiakz1t/image/upload/v1662140975/next_capa_ba07b5ec5d.png"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "1",
+                  "attributes": {
+                    "name": "JavaScript",
+                    "slug": "java-script"
+                  }
+                },
+                {
+                  "id": "2",
+                  "attributes": {
+                    "name": "TypeScript",
+                    "slug": "type-script"
+                  }
+                },
+                {
+                  "id": "4",
+                  "attributes": {
+                    "name": "React",
+                    "slug": "react"
+                  }
+                },
+                {
+                  "id": "5",
+                  "attributes": {
+                    "name": "Next",
+                    "slug": "next"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "3",
+                  "attributes": {
+                    "name": "SSR",
+                    "slug": "ssr"
+                  }
+                },
+                {
+                  "id": "4",
+                  "attributes": {
+                    "name": "SSG",
+                    "slug": "ssg"
+                  }
+                },
+                {
+                  "id": "5",
+                  "attributes": {
+                    "name": "Studies",
+                    "slug": "studies"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "Matheus",
+                  "slug": "matheus"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "3",
+          "attributes": {
+            "slug": "blog-test-2",
+            "title": "Blog test 2",
+            "excerpt": "Nostra aliquet vulputate turpis. Aptent tortor tempus accumsan. Sociosqu lacus non nam condimentum nulla tincidunt sapien vehicula pulvinar nunc est. Montes bibendum ultricies semper sociis lacus nam platea eget primis erat.",
+            "content": "JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.\n\nJavaScript was first known as LiveScript, but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java. JavaScript made its first appearance in Netscape 2.0 in 1995 with the name LiveScript. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.",
+            "allowComents": true,
+            "cover": {
+              "data": {
+                "id": "7",
+                "attributes": {
+                  "alternativeText": "Programacao-JavaScript.jpg",
+                  "url": "https://res.cloudinary.com/ddiiakz1t/image/upload/v1662370320/Programacao_Java_Script_87030c9a89.jpg"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "1",
+                  "attributes": {
+                    "name": "JavaScript",
+                    "slug": "java-script"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "5",
+                  "attributes": {
+                    "name": "Studies",
+                    "slug": "studies"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "Matheus",
+                  "slug": "matheus"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "slug": "blog-teste",
+            "title": "Blog teste",
+            "excerpt": "Fermentum congue himenaeos augue integer. Nascetur sociosqu convallis metus amet vulputate arcu. Potenti volutpat fringilla sit id sit, tempus pellentesque primis ullamcorper iaculis interdum. ",
+            "content": "<h1>HTML Ipsum Presents</h1>\n\n\t\t\t\t<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>\n\n\t\t\t\t<h2>Header Level 2</h2>\n\n\t\t\t\t<ol>\n\t\t\t\t   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>\n\t\t\t\t   <li>Aliquam tincidunt mauris eu risus.</li>\n\t\t\t\t</ol>\n\n\t\t\t\t<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>\n\n\t\t\t\t<h3>Header Level 3</h3>\n\n\t\t\t\t<ul>\n\t\t\t\t   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>\n\t\t\t\t   <li>Aliquam tincidunt mauris eu risus.</li>\n\t\t\t\t</ul>\n\n\t\t\t\t<pre><code>\n\t\t\t\t#header h1 a {\n\t\t\t\t  display: block;\n\t\t\t\t  width: 300px;\n\t\t\t\t  height: 80px;\n\t\t\t\t}\n\t\t\t\t</code></pre>",
+            "allowComents": false,
+            "cover": {
+              "data": {
+                "id": "6",
+                "attributes": {
+                  "alternativeText": "anime-girl-headphones-working-4k-5l.jpg",
+                  "url": "https://res.cloudinary.com/ddiiakz1t/image/upload/v1662370168/anime_girl_headphones_working_4k_5l_5327313817.jpg"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "1",
+                  "attributes": {
+                    "name": "JavaScript",
+                    "slug": "java-script"
+                  }
+                },
+                {
+                  "id": "2",
+                  "attributes": {
+                    "name": "TypeScript",
+                    "slug": "type-script"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "id": "5",
+                  "attributes": {
+                    "name": "Studies",
+                    "slug": "studies"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "2",
+                "attributes": {
+                  "name": "Joe",
+                  "slug": "joe"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
