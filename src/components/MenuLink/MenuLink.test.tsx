@@ -12,7 +12,7 @@ describe('<MenuLink />', () => {
   });
 
   test('it should render a internal link', () => {
-    renderTheme(<MenuLink link="http//localhost">Children</MenuLink>);
+    renderTheme(<MenuLink link="./localhost">Children</MenuLink>);
     expect(screen.getByRole('link', { name: 'Children' })).toHaveAttribute(
       'target',
       '_self',
@@ -45,13 +45,13 @@ describe('<MenuLink />', () => {
         text-decoration: none;
         margin-bottom: 1.6rem;
         font-size: 1.8rem;
-        -webkit-transition: all ease-in-out 300ms;
-        transition: all ease-in-out 300ms;
+        -webkit-transition: all ease-in-out 100ms;
+        transition: all ease-in-out 100ms;
       }
 
       .c0:hover {
-        border-right: 0.5rem solid #dc143c;
-        color: #dc143c;
+        border-right: 0.5rem solid #E94560;
+        color: #E94560;
       }
 
       <a
