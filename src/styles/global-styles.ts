@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 800;
   }
 
-  p {
+  /* p {
     margin: ${({ theme }) => theme.spacings.medium} 0;
   }
 
@@ -40,5 +40,5 @@ export const GlobalStyles = createGlobalStyle`
   .table {
     width: 100%;
     overflow-y: auto;
-  }
+  } */
 `;

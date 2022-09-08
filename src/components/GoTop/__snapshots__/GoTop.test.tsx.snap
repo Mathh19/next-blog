@@ -3,7 +3,7 @@
 exports[`<GoTop /> > should render a go to top button 1`] = `
 .c0 {
   position: fixed;
-  background-color: #16213E;
+  background-color: #082032;
   color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
