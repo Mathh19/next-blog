@@ -7,7 +7,7 @@ export const Container = styled.a`
     text-decoration: none;
     margin-bottom: ${theme.spacings.small};
     font-size: 1.8rem;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 100ms;
 
     &:hover {
       border-right: 0.5rem solid ${theme.colors.secondary};
