@@ -6,6 +6,7 @@ export const theme = {
     black: '#000000',
     white: '#FFFFFF',
     mediumGray: '#DDDDDD',
+    darkGray: '#AAAAAA',
   },
   font: {
     family: {
