@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
+    font-size: 1.8rem;
+    line-height: 1.5;
 
     p {
-      margin: ${theme.spacings.xlarge} 0;
+      margin: ${theme.spacings.medium} 0;
     }
 
     a {
@@ -33,6 +34,21 @@ export const Container = styled.p`
       overflow-x: auto;
     }
 
+    pre code {
+      background: inherit;
+      color: inherit;
+    }
+
+    code {
+      font-family: monospace;
+      color: #B2C8DF;
+      font-size: ${theme.font.sizes.small};
+      background: #2C394B;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      border-radius: 5px;
+    }
+
     img {
       max-width: 100%;
     }
@@ -40,7 +56,7 @@ export const Container = styled.p`
     .image {
       background: ${theme.colors.mediumGray};
       line-height: 0;
-      margin: ${theme.spacings.xlarge} 0;
+      margin: ${theme.spacings.medium} 0;
     }
 
     .image figcaption {
@@ -62,7 +78,7 @@ export const Container = styled.p`
     }
 
     ul, ol {
-      margin: ${theme.spacings.xlarge};
+      margin: ${theme.spacings.medium};
     }
 
     .table {
@@ -74,11 +90,21 @@ export const Container = styled.p`
     table {
         width: 100%;
         border-collapse: collapse;
+        margin: ${theme.spacings.medium} 0;
     }
 
     table td, table th {
       padding: ${theme.spacings.small};
       border: 0.1rem solid ${theme.colors.mediumGray};
+    }
+
+    blockquote {
+      border-left: 0.5rem solid ${theme.colors.secondary};
+      color: ${theme.colors.darkGray};
+      filter: brightness(80%);
+      padding-left: ${theme.spacings.medium};
+      font-style: italic;
+      margin: ${theme.spacings.medium};
     }
 
     @media ${theme.media.lteMedium} {

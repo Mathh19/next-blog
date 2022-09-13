@@ -3,6 +3,7 @@
 exports[`<ArticleHeader /> > should render heading, except, cover img and meta 1`] = `
 .c2 {
   color: #082032;
+  line-height: 1.2;
   font-size: 4.0rem;
   text-transform: none;
 }
@@ -47,6 +48,7 @@ exports[`<ArticleHeader /> > should render heading, except, cover img and meta 1
 
 .c3 {
   margin: 2.4rem 0;
+  font-size: 2.4rem;
 }
 
 .c4 {
