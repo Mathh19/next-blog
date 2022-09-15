@@ -14,10 +14,11 @@ export const MenuLink = ({ children, link, newTab = false }: MenuLinkProps) => {
   if (nextLink) {
     return (
       <Link href={link} passHref>
-        <Styled.Container target={target}>{children}</Styled.Container>;
+        <Styled.Container target={target}>{children}</Styled.Container>
       </Link>
     );
   }
+
   return (
     <Styled.Container href={link} target={target}>
       {children}
