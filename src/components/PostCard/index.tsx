@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as Styled from './styles';
 
 export type PostCardProps = {
+  id: string;
   title: string;
   slug: string;
   excerpt: string;
