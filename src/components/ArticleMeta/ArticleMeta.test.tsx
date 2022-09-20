@@ -36,4 +36,12 @@ describe('<ArticleMeta />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should no author and no categories', () => {
+    const { container } = renderTheme(
+      <ArticleMeta {...props} author={undefined} categories={undefined} />,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
