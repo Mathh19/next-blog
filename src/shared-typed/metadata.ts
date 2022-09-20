@@ -1,5 +1,7 @@
 export type Metadata = {
   id: string;
-  name: string;
-  slug: string;
+  attributes: {
+    name: string;
+    slug: string;
+  };
 };

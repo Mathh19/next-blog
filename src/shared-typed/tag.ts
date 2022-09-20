@@ -1,7 +1,3 @@
-export type PostTag = {
-  id: string;
-  attributes: {
-    name: string;
-    slug: string;
-  };
-};
+import { Metadata } from './metadata';
+
+export type PostTag = Metadata;
