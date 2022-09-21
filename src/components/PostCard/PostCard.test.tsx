@@ -11,13 +11,15 @@ describe('<PostCard />', () => {
     renderTheme(<PostCard {...props} />);
 
     expect(
-      screen.getByRole('heading', { name: mock.title }),
+      screen.getByRole('heading', { name: mock.attributes.title }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: mock.title })).toBeInTheDocument();
-    expect(screen.getByText(mock.excerpt)).toBeInTheDocument();
     expect(
-      screen.getAllByRole('link', { name: mock.title })[0],
-    ).toHaveAttribute('href', `/post/${mock.slug}`);
+      screen.getByRole('img', { name: mock.attributes.title }),
+    ).toBeInTheDocument();
+    expect(screen.getByText(mock.attributes.excerpt)).toBeInTheDocument();
+    expect(
+      screen.getAllByRole('link', { name: mock.attributes.title })[0],
+    ).toHaveAttribute('href', `/post/${mock.attributes.slug}`);
   });
 
   it('should match snapshot', () => {

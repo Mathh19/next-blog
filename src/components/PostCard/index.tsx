@@ -1,29 +1,35 @@
 import { Heading } from '../../components/Heading';
 import Link from 'next/link';
 import * as Styled from './styles';
+import { ImageStrapi } from 'shared-typed/strapi-image';
 
 export type PostCardProps = {
   id: string;
-  title: string;
-  slug: string;
-  excerpt: string;
-  cover: string;
+  attributes: {
+    title: string;
+    slug: string;
+    excerpt: string;
+    cover: ImageStrapi;
+  };
 };
 
-export const PostCard = ({ title, excerpt, cover, slug }: PostCardProps) => {
+export const PostCard = ({ attributes }: PostCardProps) => {
   return (
     <Styled.Wrapper>
-      <Link href={`/post/${slug}`}>
+      <Link href={`/post/${attributes.slug}`}>
         <a>
-          <Styled.Cover src={cover} alt={title} />
+          <Styled.Cover
+            src={attributes.cover.attributes.url}
+            alt={attributes.title}
+          />
         </a>
       </Link>
       <Heading as="h2" size="small">
-        <Link href={`/post/${slug}`}>
-          <a>{title}</a>
+        <Link href={`/post/${attributes.slug}`}>
+          <a>{attributes.title}</a>
         </Link>
       </Heading>
-      <Styled.Excerpt>{excerpt}</Styled.Excerpt>
+      <Styled.Excerpt>{attributes.excerpt}</Styled.Excerpt>
     </Styled.Wrapper>
   );
 };
