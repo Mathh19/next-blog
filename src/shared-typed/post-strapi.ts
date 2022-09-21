@@ -1,9 +1,17 @@
 import { PostTagsProps } from 'components/PostTags';
-import { PostProps } from '../components/Post';
+import { Author } from './author';
+import { Category } from './category';
+import { ImageStrapi } from './strapi-image';
 export type PostStrapi = {
   id: string;
-  attributes: PostProps & {
-    tags: PostTagsProps;
+  attributes: {
     slug: string;
+    title: string;
+    excerpt: string;
+    content: string;
+    cover: ImageStrapi;
+    categories: Category[];
+    tags: PostTagsProps;
+    author: Author;
   };
 };
