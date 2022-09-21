@@ -1,0 +1,526 @@
+// Vitest Snapshot v1
+
+exports[`<BaseTemplate /> > should match snapshot 1`] = `
+.c16 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.c16 p {
+  margin: 2.4rem 0;
+}
+
+.c16 a {
+  color: #E94560;
+}
+
+.c16 a:visited,
+.c16 a:link {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c16 a:hover {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.c16 pre {
+  background-color: #2C394B;
+  padding: 2.4rem;
+  font-family: monospace;
+  color: #B2C8DF;
+  margin: 4.0rem 0;
+  width: 100%;
+  font-size: 1.6rem;
+  overflow-x: auto;
+}
+
+.c16 pre code {
+  background: inherit;
+  color: inherit;
+}
+
+.c16 code {
+  font-family: monospace;
+  color: #B2C8DF;
+  font-size: 1.6rem;
+  background: #2C394B;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+}
+
+.c16 img {
+  max-width: 100%;
+}
+
+.c16 .image {
+  background: #DDDDDD;
+  line-height: 0;
+  margin: 2.4rem 0;
+}
+
+.c16 .image figcaption {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.c16 .image-style-side {
+  float: right;
+  max-width: 50%;
+  margin: 2.4rem;
+}
+
+.c16 hr {
+  border: none;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+
+.c16 ul,
+.c16 ol {
+  margin: 2.4rem;
+}
+
+.c16 .table {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.c16 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.4rem 0;
+}
+
+.c16 table td,
+.c16 table th {
+  padding: 1.6rem;
+  border: 0.1rem solid #DDDDDD;
+}
+
+.c16 blockquote {
+  border-left: 0.5rem solid #E94560;
+  color: #AAAAAA;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  padding-left: 2.4rem;
+  font-style: italic;
+  margin: 2.4rem;
+}
+
+.c15 {
+  text-align: center;
+  border-top: 0.1rem solid #DDDDDD;
+}
+
+.c15 a {
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 .heart {
+  color: #E94560;
+}
+
+.c6 {
+  color: #082032;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.c12 {
+  color: #082032;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  text-transform: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c7 > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.c10 {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 96rem;
+  padding-bottom: 6.4rem;
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+.c10 .c5 {
+  margin: 0 0 0.6rem;
+}
+
+.c10 img:hover {
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+.c2 {
+  background: #082032;
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  height: 100vh;
+  top: 0;
+  left: 0rem;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  overflow-y: auto;
+  box-shadow: 5px 0 10px -2px #000000;
+  left: -36rem;
+  overflow-y: hidden;
+}
+
+.c2::-webkit-scrollbar {
+  width: 10px;
+}
+
+.c2::-webkit-scrollbar-track {
+  background: #082032;
+}
+
+.c2::-webkit-scrollbar-thumb {
+  background: #E94560;
+  border-radius: 10px;
+}
+
+.c2::-webkit-scrollbar-thumb:hover {
+  background: #720d1e;
+}
+
+.c3 {
+  margin: auto;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 4.8rem;
+}
+
+.c4 img {
+  border: 0.5rem solid #E94560;
+}
+
+.c0 {
+  position: fixed;
+  top: 2.4rem;
+  color: #FFFFFF;
+  background: #082032;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  left: 26rem;
+  border-radius: 4px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  left: 1rem;
+  color: #FFFFFF;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c8 {
+  display: block;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  -webkit-transition: all ease-in-out 100ms;
+  transition: all ease-in-out 100ms;
+}
+
+.c8:hover {
+  border-right: 0.5rem solid #E94560;
+  color: #E94560;
+}
+
+.c9 {
+  margin-top: 6.4rem;
+}
+
+.c13 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.c14 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c17 {
+  position: fixed;
+  background-color: #082032;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+}
+
+.c17:hover {
+  -webkit-transition: 500ms ease-in-out all;
+  transition: 500ms ease-in-out all;
+  background-color: #333333;
+  opacity: unset;
+}
+
+@media (max-width:768px) {
+  .c16 {
+    font-size: 2rem;
+  }
+
+  .c16 .image-style-side {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media ((max-width:300px)) {
+  .c0 {
+    left: 1rem;
+  }
+}
+
+<div>
+  <div
+    class=""
+  >
+    <a
+      aria-label="Open or Close menu"
+      class="c0"
+      href="#"
+      title="Open or Close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </a>
+    <div
+      aria-hidden="true"
+      class="c2"
+    >
+      <nav
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <h1
+            class="c5 c6"
+          >
+            <a
+              class="c7"
+              href="/"
+              target="_self"
+            >
+              <img
+                alt="Test blog"
+                src="https://res.cloudinary.com/ddiiakz1t/image/upload/v1662119066/bob_c83cb89756.jpg"
+              />
+            </a>
+          </h1>
+        </div>
+        <a
+          class="c8"
+          href="#texto"
+          target="_self"
+        >
+          O texto
+        </a>
+        <a
+          class="c8"
+          href="#link-2"
+          target="_self"
+        >
+          Link 2
+        </a>
+      </nav>
+    </div>
+    <div
+      class="c9"
+    >
+      <header
+        class="c10"
+      >
+        <h1
+          class="c5 c6"
+        >
+          <a
+            class="c7"
+            href="/"
+            target="_self"
+          >
+            <img
+              alt="Test blog - A blog test then Idon't know what describe, it is random words just test"
+              src="https://res.cloudinary.com/ddiiakz1t/image/upload/v1662119066/bob_c83cb89756.jpg"
+            />
+          </a>
+        </h1>
+        <div
+          class="c11"
+        >
+          <h2
+            class="c5 c12"
+          >
+            Test blog
+          </h2>
+          <p>
+            A blog test then Idon't know what describe, it is random words just test
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="c13"
+    >
+      Olá mundo!
+    </div>
+    <div
+      class="c14"
+    >
+      <footer
+        class="c15"
+      >
+        <p
+          class="c16"
+        >
+          <p>
+            O texto da footer
+          </p>
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="c17"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
