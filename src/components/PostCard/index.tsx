@@ -1,7 +1,7 @@
 import { Heading } from '../../components/Heading';
 import Link from 'next/link';
 import * as Styled from './styles';
-import { ImageStrapi } from 'shared-typed/strapi-image';
+import { ImageStrapi } from 'shared-types/strapi-image';
 
 export type PostCardProps = {
   id: string;

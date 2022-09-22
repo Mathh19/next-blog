@@ -2,7 +2,7 @@ import { PostContainer } from '../../components/PostContainer';
 import { ArticleHeader } from '../../components/ArticleHeader';
 import { HtmlContent } from '../../components/HtmlContent';
 import * as Styled from './styles';
-import { ImageStrapi } from 'shared-typed/strapi-image';
+import { ImageStrapi } from 'shared-types/strapi-image';
 import { ArticleMetaProps } from 'components/ArticleMeta';
 
 export type PostProps = {
