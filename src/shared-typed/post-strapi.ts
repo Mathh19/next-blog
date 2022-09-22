@@ -13,5 +13,7 @@ export type PostStrapi = {
     categories: Category[];
     tags: PostTagsProps;
     author: Author;
+    createdAt: string;
+    allowComments: boolean;
   };
 };
