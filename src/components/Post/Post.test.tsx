@@ -10,9 +10,11 @@ describe('<Post />', () => {
     const { container } = renderTheme(<Post {...props} />);
 
     expect(
-      screen.getByRole('heading', { name: props.title }),
+      screen.getByRole('heading', { name: props.attributes.title }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
+    expect(
+      screen.getByRole('img', { name: props.attributes.title }),
+    ).toBeInTheDocument();
     expect(
       screen.getByText(
         /^Proident sunt est enim fugiat sit incididunt sunt veniam adipisicing amet aliquip/i,

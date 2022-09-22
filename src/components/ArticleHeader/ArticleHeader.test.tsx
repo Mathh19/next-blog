@@ -12,11 +12,15 @@ describe('<ArticleHeader />', () => {
     const { container } = renderTheme(<ArticleHeader {...props} />);
 
     expect(
-      screen.getByRole('heading', { name: props.title }),
+      screen.getByRole('heading', { name: props.attributes.title }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: props.title })).toBeInTheDocument();
-    expect(screen.getByText(props.excerpt)).toBeInTheDocument();
-    expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
+    expect(
+      screen.getByRole('img', { name: props.attributes.title }),
+    ).toBeInTheDocument();
+    expect(screen.getByText(props.attributes.excerpt)).toBeInTheDocument();
+    expect(
+      screen.getByText(formatDate(props.attributes.createdAt)),
+    ).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

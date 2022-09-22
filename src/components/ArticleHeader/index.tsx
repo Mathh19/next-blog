@@ -1,31 +1,30 @@
 import { Heading } from '../Heading';
 import { ArticleMeta, ArticleMetaProps } from '../ArticleMeta/index';
 import * as Styled from './styles';
+import { ImageStrapi } from 'shared-typed/strapi-image';
 
 export type ArticleHeaderProps = {
   id: string;
-  title: string;
-  excerpt: string;
-  cover: string;
-} & ArticleMetaProps;
+  attributes: {
+    title: string;
+    excerpt: string;
+    cover: ImageStrapi;
+  } & ArticleMetaProps;
+};
 
-export const ArticleHeader = ({
-  title,
-  cover,
-  excerpt,
-  createdAt,
-  categories,
-  author,
-}: ArticleHeaderProps) => {
+export const ArticleHeader = ({ attributes }: ArticleHeaderProps) => {
   return (
     <Styled.Wrapper>
-      <Heading size="big">{title}</Heading>
-      <Styled.Excerpt>{excerpt}</Styled.Excerpt>
-      <Styled.Cover src={cover} alt={`${title}`} />
+      <Heading size="big">{attributes.title}</Heading>
+      <Styled.Excerpt>{attributes.excerpt}</Styled.Excerpt>
+      <Styled.Cover
+        src={attributes.cover.attributes.url}
+        alt={`${attributes.title}`}
+      />
       <ArticleMeta
-        author={author}
-        categories={categories}
-        createdAt={createdAt}
+        author={attributes.author}
+        categories={attributes.categories}
+        createdAt={attributes.createdAt}
       />
     </Styled.Wrapper>
   );

@@ -14,8 +14,6 @@ export const ArticleMeta = ({
   author = undefined,
   categories = [],
 }: ArticleMetaProps) => {
-  console.log(author, categories);
-
   return (
     <Styled.Wrapper>
       <p>
