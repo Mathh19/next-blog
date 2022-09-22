@@ -16,7 +16,15 @@ export const Wrapper = styled.header`
   ${HeadingStyles} {
     margin: 0 0 0.6rem;
   }
-  `}
+
+  @media ${theme.media.lteSmall} {
+    display: flex;
+    flex-flow: column wrap;
+    & > ${HeadingStyles} {
+        margin: 0 0 0.6rem;
+    }
+  }
+`}
 
   img:hover {
     transition: all ease-in-out 300ms;
@@ -30,5 +38,9 @@ export const Content = styled.div`
     flex-flow: column wrap;
     margin-left: ${theme.spacings.large};
     max-width: 48rem;
+
+    @media ${theme.media.lteSmall} {
+      margin-left: 0;
+    }
   `}
 `;
