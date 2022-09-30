@@ -80,7 +80,7 @@ fragment post on PostEntity {
     excerpt
     content
     createdAt
-    allowComents
+    allowComments
     ...cover
     ...categories
     ...tags
