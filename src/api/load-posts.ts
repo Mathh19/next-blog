@@ -30,7 +30,7 @@ type StringFilterInput = {
 
 export type StrapiPostAndSettings = {
   setting: SettingsStrapi;
-  posts: PostStrapi[];
+  posts: PostStrapi;
 };
 
 export type LoadPostsVariables = {
