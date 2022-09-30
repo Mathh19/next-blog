@@ -1,3 +1,3 @@
-import { Metadata } from './metadata';
+import { MetadataArray } from './category';
 
-export type PostTag = Metadata;
+export type PostTag = MetadataArray;

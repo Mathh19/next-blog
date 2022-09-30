@@ -5,10 +5,11 @@ import { BaseTemplate } from '../../templates/Base';
 
 export type PostsTemplateProps = {
   settings: SettingsStrapi;
-  posts?: PostStrapi[];
+  posts?: PostStrapi;
 };
 
-export const PostsTemplate = ({ settings, posts = [] }: PostsTemplateProps) => {
+export const PostsTemplate = ({ settings, posts }: PostsTemplateProps) => {
+  console.log(posts);
   return (
     <BaseTemplate settings={settings}>
       <PostGrid posts={posts} />

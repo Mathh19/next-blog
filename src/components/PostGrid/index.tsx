@@ -1,22 +1,35 @@
-import { PostCard, PostCardProps } from '../../components/PostCard';
+import { ImageStrapi } from 'shared-types/strapi-image';
+import { PostCard } from '../../components/PostCard';
 import * as Styled from './styles';
 
 export type PostGridProps = {
-  posts?: PostCardProps[];
+  posts?: {
+    data: {
+      id: string;
+      attributes: {
+        title: string;
+        slug: string;
+        excerpt: string;
+        cover: ImageStrapi;
+      };
+    }[];
+  };
 };
 
-export const PostGrid = ({ posts = [] }: PostGridProps) => {
+export const PostGrid = ({ posts = undefined }: PostGridProps) => {
+  if (typeof posts === 'undefined') {
+    return (
+      <Styled.Wrapper>
+        <Styled.NotFound>Nenhum post encontrado aqui =(</Styled.NotFound>
+      </Styled.Wrapper>
+    );
+  }
   return (
     <Styled.Wrapper>
-      {posts.length === 0 && (
-        <Styled.NotFound>Nenhum post encontrado aqui =(</Styled.NotFound>
-      )}
-
       <Styled.Grid>
-        {posts.length > 0 &&
-          posts.map((post) => (
-            <PostCard key={`post-card-${post.id}`} {...post} />
-          ))}
+        {posts.data.map((post) => (
+          <PostCard key={`post-card-${post.id}`} data={post} />
+        ))}
       </Styled.Grid>
     </Styled.Wrapper>
   );

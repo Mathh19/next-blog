@@ -277,7 +277,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
         class="c8"
       >
         
-  
+    
         <p>
           Nostro 
           <strong>
@@ -310,58 +310,58 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
           . La.
         </p>
         
-  
+    
         <h1>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h1>
         
-  
+    
         <h2>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h2>
         
-  
+    
         <h3>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h3>
         
-  
+    
         <h4>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h4>
         
-  
+    
         <h5>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h5>
         
-  
+    
         <h6>
           Tincidunt necessitatibus, timeam theophrastus mel 
         </h6>
         
-  
+    
         <pre>
           <code
             class="language-plaintext"
           >
             import { HtmlContent } from '../HtmlContent';
-  import * as Styled from './styles';
-  export type FooterProps = {
-    footerHtml: string;
-  };
-  export const Footer = ({ footerHtml }: FooterProps) =&gt; {
-    return (
-      &lt;Styled.Container&gt;
-        &lt;HtmlContent html={footerHtml} /&gt;
-      &lt;/Styled.Container&gt;
-    );
-  };
-  
+    import * as Styled from './styles';
+    export type FooterProps = {
+      footerHtml: string;
+    };
+    export const Footer = ({ footerHtml }: FooterProps) =&gt; {
+      return (
+        &lt;Styled.Container&gt;
+          &lt;HtmlContent html={footerHtml} /&gt;
+        &lt;/Styled.Container&gt;
+      );
+    };
+    
           </code>
         </pre>
         
-  
+    
         <p>
           Qui eu 
           <i>
@@ -700,7 +700,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
           The end.
         </p>
         
-  
+    
       </p>
     </div>
   </div>

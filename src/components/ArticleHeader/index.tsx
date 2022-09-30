@@ -18,7 +18,7 @@ export const ArticleHeader = ({ attributes }: ArticleHeaderProps) => {
       <Heading size="big">{attributes.title}</Heading>
       <Styled.Excerpt>{attributes.excerpt}</Styled.Excerpt>
       <Styled.Cover
-        src={attributes.cover.attributes.url}
+        src={attributes.cover.data.attributes.url}
         alt={`${attributes.title}`}
       />
       <ArticleMeta

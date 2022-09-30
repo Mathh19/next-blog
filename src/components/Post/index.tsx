@@ -4,25 +4,41 @@ import { HtmlContent } from '../../components/HtmlContent';
 import * as Styled from './styles';
 import { ImageStrapi } from 'shared-types/strapi-image';
 import { ArticleMetaProps } from 'components/ArticleMeta';
+import { PostTag } from 'shared-types/tag';
 
 export type PostProps = {
-  id: string;
-  attributes: {
-    title: string;
-    excerpt: string;
-    cover: ImageStrapi;
-    content: string;
-  } & ArticleMetaProps;
+  data: {
+    id: string;
+    attributes: {
+      title: string;
+      excerpt: string;
+      cover: ImageStrapi;
+      content: string;
+      tags: PostTag;
+      slug: string;
+      allowComments: boolean;
+    } & ArticleMetaProps;
+  }[];
 };
 
-export const Post = ({ id, attributes }: PostProps) => {
+export const Post = ({ data }: PostProps) => {
   return (
     <Styled.Wrapper>
       <PostContainer size="max">
-        <ArticleHeader id={id} attributes={attributes} />
+        {data.map((post) => (
+          <ArticleHeader
+            key={post.id}
+            id={post.id}
+            attributes={post.attributes}
+          />
+        ))}
+        {/* <ArticleHeader id={data.id} attributes={data.attributes} /> */}
       </PostContainer>
       <PostContainer size="content">
-        <HtmlContent html={attributes.content} />
+        {data.map((post) => (
+          <HtmlContent key={post.id} html={post.attributes.content} />
+        ))}
+        {/* <HtmlContent html={data.attributes.content} /> */}
       </PostContainer>
     </Styled.Wrapper>
   );

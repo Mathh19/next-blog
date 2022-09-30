@@ -42,7 +42,8 @@
             "title": "Blog sobre Nextjs",
             "excerpt": "Esse é um blog que fala um pouco sobre Next e como ele funciona.",
             "content": "Next é um framework do React.\n\n# SPA\n\n### SPA: Single Page apliccation. É gerado quando se faz uma aplicação usando apenas React por exemplo. Nesse caso a máquina cliente fica responsável por renderizar o código javascript da página (CSR: Client side rendering).\n\n# SSG\n\n### SSG: Server-site generation. Uma página estática gerada. É possível criar usando Next.js. Funciona de maneira semelhante ao SPA, porém é feito uma re build gerando arquivos HTMLs, CSS e javaScript ao invés de jogar tudo em um arquivo só como o SPA.\n\n# SSR\n\n### SSR: Server-site rendering. O contrário do SPA, não é feito a renderização na máquina cliente, pois o servidor que ficará responsável por isso, porém isso há uma desvantagem, já que quanto mais requisição você receber na sua página mais o servidor ficará responsável por elas, então o uso dele acaba sendo especifico, por exemplo para algo que você precise que fique sendo atualizado na página constantemente, então o torna não aplicável para qualquer situação.\n\n# SSG e SSR\n\n### É possível de fazer uma página hibrida misturando o SSG e SSR.\n\n# Sobre o Next\n\n![Untitled.png](https://res.cloudinary.com/ddiiakz1t/image/upload/v1662141457/Untitled_a67297dea1.png)\n\n### Tudo que estiver no arquivo /pages será considerado uma rota.\n\n```jsx\nexport default function Test() {\n    return <h1>Teste</h1>;\n}\n```\n\n### Digitando /test na url você vai acessar a rota test, como explicado acima arquivos dentro de /pages são rotas.\n\n![Untitled.png](https://res.cloudinary.com/ddiiakz1t/image/upload/v1662141495/Untitled_eb8bb2bead.png)",
-            "allowComents": true,
+            "allowComments": true,
+            "createdAt": "2022-09-02T15:16:09.246+00:00",
             "cover": {
               "data": {
                 "id": "3",

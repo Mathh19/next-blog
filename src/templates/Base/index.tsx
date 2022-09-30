@@ -14,23 +14,23 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
   return (
     <Styled.Wrapper>
       <Menu
-        links={settings.attributes.menuLink}
-        blogName={settings.attributes.blogName}
-        logo={settings.attributes.logo.attributes.url}
+        links={settings.data.attributes.menuLink}
+        blogName={settings.data.attributes.blogName}
+        logo={settings.data.attributes.logo.data.attributes.url}
       />
 
       <Styled.HeaderContainer>
         <Header
-          title={settings.attributes.blogName}
-          description={settings.attributes.blogDescription}
-          srcImg={settings.attributes.logo.attributes.url}
+          title={settings.data.attributes.blogName}
+          description={settings.data.attributes.blogDescription}
+          srcImg={settings.data.attributes.logo.data.attributes.url}
         />
       </Styled.HeaderContainer>
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
 
       <Styled.FooterContainer>
-        <Footer footerHtml={settings.attributes.footer} />
+        <Footer footerHtml={settings.data.attributes.footer} />
       </Styled.FooterContainer>
 
       <GoTop />
