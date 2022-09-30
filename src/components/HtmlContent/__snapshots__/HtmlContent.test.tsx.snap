@@ -126,11 +126,11 @@ exports[`<HtmlContent /> > it should match snapshot 1`] = `
   }
 }
 
-<p
+<div
   class="c0"
 >
   <b>
     Children
   </b>
-</p>
+</div>
 `;

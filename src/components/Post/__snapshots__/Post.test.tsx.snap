@@ -273,7 +273,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
     <div
       class="c7"
     >
-      <p
+      <div
         class="c8"
       >
         
@@ -701,7 +701,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
         </p>
         
     
-      </p>
+      </div>
     </div>
   </div>
 </div>
