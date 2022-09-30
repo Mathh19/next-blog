@@ -1,5 +1,6 @@
 export default {
-  url: 'https://strapi-react-landing-pages.herokuapp.com/api/pages/?populate[menu][populate]=*&populate[sections][populate]=*',
+  url: '',
   siteName: 'Matheus',
-  defaultSlug: 'landing-page',
+  defaultSlug: '',
+  graphqlURL: 'http://localhost:1337/graphql',
 };
