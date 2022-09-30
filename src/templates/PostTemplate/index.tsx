@@ -12,7 +12,6 @@ export type PostTemplateProps = {
 };
 
 export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
-  console.log(post);
   return (
     <BaseTemplate settings={settings}>
       <Post {...post} />
