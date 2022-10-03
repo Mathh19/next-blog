@@ -32,13 +32,11 @@ export const Post = ({ data }: PostProps) => {
             attributes={post.attributes}
           />
         ))}
-        {/* <ArticleHeader id={data.id} attributes={data.attributes} /> */}
       </PostContainer>
       <PostContainer size="content">
         {data.map((post) => (
           <HtmlContent key={post.id} html={post.attributes.content} />
         ))}
-        {/* <HtmlContent html={data.attributes.content} /> */}
       </PostContainer>
     </Styled.Wrapper>
   );
