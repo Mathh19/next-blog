@@ -7,10 +7,7 @@ export default function Index({ posts, setting }: StrapiPostAndSettings) {
   return (
     <>
       <Head>
-        <title>
-          {setting.data.attributes.blogName} -{' '}
-          {setting.data.attributes.blogDescription}
-        </title>
+        <title>{setting.data.attributes.blogName}</title>
       </Head>
       <PostsTemplate posts={posts} settings={setting} />
     </>
@@ -24,7 +21,7 @@ export const getStaticProps: GetStaticProps<
 
   try {
     data = await loadPosts();
-  } catch (e) {
+  } catch (err) {
     data = null;
   }
 
@@ -39,5 +36,6 @@ export const getStaticProps: GetStaticProps<
       posts: data.posts,
       setting: data.setting,
     },
+    revalidate: 60,
   };
 };
