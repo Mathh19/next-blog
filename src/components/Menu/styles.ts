@@ -25,6 +25,8 @@ export const Wrapper = styled.div<MenuBehaviourProps>`
     transition: all 400ms ease-in-out;
     overflow-y: auto;
     box-shadow: 5px 0 10px -2px ${theme.colors.black};
+    scrollbar-color: ${theme.colors.secondary} ${theme.colors.primary};
+    scrollbar-width: thin;
     ${wrapperChanger(menuVisible)}
 
 
