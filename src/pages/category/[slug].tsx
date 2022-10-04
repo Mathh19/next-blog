@@ -4,7 +4,10 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { PostsTemplate } from 'templates/PostsTemplate';
 
-export default function AuthorPage({ posts, setting }: StrapiPostAndSettings) {
+export default function CategoryPage({
+  posts,
+  setting,
+}: StrapiPostAndSettings) {
   const router = useRouter();
 
   if (router.isFallback) {
