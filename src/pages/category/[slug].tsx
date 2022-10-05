@@ -1,4 +1,8 @@
-import { loadPosts, StrapiPostAndSettings } from 'api/load-posts';
+import {
+  defaultLoadPostsVariables,
+  loadPosts,
+  StrapiPostAndSettings,
+} from 'api/load-posts';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -7,6 +11,7 @@ import { PostsTemplate } from 'templates/PostsTemplate';
 export default function CategoryPage({
   posts,
   setting,
+  variables,
 }: StrapiPostAndSettings) {
   const router = useRouter();
 
@@ -25,7 +30,7 @@ export default function CategoryPage({
           Category: {categoryName} - {setting.data.attributes.blogName}
         </title>
       </Head>
-      <PostsTemplate posts={posts} settings={setting} />
+      <PostsTemplate posts={posts} settings={setting} variables={variables} />
     </>
   );
 }
@@ -41,11 +46,12 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
   ctx,
 ) => {
   let data = null;
+  const variables = {
+    categorySlug: { contains: ctx.params.slug as string },
+  };
 
   try {
-    data = await loadPosts({
-      categorySlug: { contains: ctx.params.slug as string },
-    });
+    data = await loadPosts(variables);
   } catch (err) {
     data = null;
   }
@@ -60,6 +66,10 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
     props: {
       posts: data.posts,
       setting: data.setting,
+      variables: {
+        ...defaultLoadPostsVariables,
+        ...variables,
+      },
     },
     revalidate: 60,
   };
