@@ -21,10 +21,17 @@ export const Excerpt = styled.p`
   `}
 `;
 
-export const Cover = styled.img`
+export const CoverContainer = styled.div`
   ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+    margin-bottom: ${theme.spacings.medium};
+  `}
+`;
+
+export const Cover = styled.img`
+  ${css`
     max-width: 100%;
     display: block;
-    margin-bottom: ${theme.spacings.medium};
   `}
 `;

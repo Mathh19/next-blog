@@ -26,6 +26,14 @@ exports[`<Menu /> > should match snapshot 1`] = `
   transition: all 400ms ease-in-out;
   overflow-y: auto;
   box-shadow: 5px 0 10px -2px #000000;
+  -webkit-scrollbar-color: #E94560 #082032;
+  -moz-scrollbar-color: #E94560 #082032;
+  -ms-scrollbar-color: #E94560 #082032;
+  scrollbar-color: #E94560 #082032;
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
   left: -36rem;
   overflow-y: hidden;
 }

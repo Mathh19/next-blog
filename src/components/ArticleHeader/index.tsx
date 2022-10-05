@@ -17,10 +17,12 @@ export const ArticleHeader = ({ attributes }: ArticleHeaderProps) => {
     <Styled.Wrapper>
       <Heading size="big">{attributes.title}</Heading>
       <Styled.Excerpt>{attributes.excerpt}</Styled.Excerpt>
-      <Styled.Cover
-        src={attributes.cover.data.attributes.url}
-        alt={`${attributes.title}`}
-      />
+      <Styled.CoverContainer>
+        <Styled.Cover
+          src={attributes.cover.data.attributes.url}
+          alt={`${attributes.title}`}
+        />
+      </Styled.CoverContainer>
       <ArticleMeta
         author={attributes.author}
         categories={attributes.categories}
