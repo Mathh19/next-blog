@@ -13,12 +13,12 @@ export type ArticleMetaProps = {
 export const ArticleMeta = ({
   createdAt,
   author = undefined,
-  categories = undefined,
+  categories = { data: [] },
 }: ArticleMetaProps) => {
   return (
     <Styled.Wrapper>
       <p>
-        {typeof author !== 'undefined' && (
+        {author && typeof author !== 'undefined' && (
           <>
             <span>Por </span>
             <Link href={`/author/${author.data.attributes.slug}`}>
@@ -30,7 +30,7 @@ export const ArticleMeta = ({
 
         <time dateTime={createdAt}>{formatDate(createdAt)}</time>
 
-        {typeof categories !== 'undefined' && (
+        {categories.data.length !== 0 && (
           <>
             <span className="separator"> | </span>
             <span className="categories">
