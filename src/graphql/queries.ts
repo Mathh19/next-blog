@@ -7,6 +7,7 @@ export const GRAPHQL_QUERY = gql`
   query GET_POSTS(
   	$categorySlug: StringFilterInput
     $postSlug: StringFilterInput
+    $postSearch: StringFilterInput
     $authorSlug: StringFilterInput
     $tagSlug: StringFilterInput
     $sort: [String] = "createdAt:desc"
@@ -21,6 +22,7 @@ export const GRAPHQL_QUERY = gql`
       sort: $sort
       filters: {
         slug: $postSlug
+        title: $postSearch
         categories: { slug: $categorySlug }
         author: { slug: $authorSlug }
         tags: { slug: $tagSlug }

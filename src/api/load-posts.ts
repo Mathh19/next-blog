@@ -37,6 +37,7 @@ export type StrapiPostAndSettings = {
 export type LoadPostsVariables = {
   categorySlug?: StringFilterInput;
   postSlug?: StringFilterInput;
+  postSearch?: StringFilterInput;
   authorSlug?: StringFilterInput;
   tagSlug?: StringFilterInput;
   sort?: string;

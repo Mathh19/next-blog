@@ -8,9 +8,14 @@ import { GoTop } from '../../components/GoTop';
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
   children: React.ReactNode;
+  displaySearch?: boolean;
 };
 
-export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
+export const BaseTemplate = ({
+  settings,
+  children,
+  displaySearch = true,
+}: BaseTemplateProps) => {
   return (
     <Styled.Wrapper>
       <Menu
@@ -26,6 +31,18 @@ export const BaseTemplate = ({ settings, children }: BaseTemplateProps) => {
           srcImg={settings.data.attributes.logo.data.attributes.url}
         />
       </Styled.HeaderContainer>
+
+      {displaySearch ? (
+        <Styled.SearchContainer>
+          <form action="/search/" method="GET">
+            <Styled.SearchInput
+              type="search"
+              placeholder="Buscar post"
+              name="q"
+            />
+          </form>
+        </Styled.SearchContainer>
+      ) : null}
 
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
 
