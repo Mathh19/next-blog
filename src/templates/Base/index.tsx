@@ -4,6 +4,7 @@ import { Menu } from '../../components/Menu';
 import { SettingsStrapi } from 'shared-types/settings-strapi';
 import * as Styled from './styles';
 import { GoTop } from '../../components/GoTop';
+import { useRouter } from 'next/router';
 
 export type BaseTemplateProps = {
   settings: SettingsStrapi;
@@ -16,6 +17,8 @@ export const BaseTemplate = ({
   children,
   displaySearch = true,
 }: BaseTemplateProps) => {
+  const router = useRouter();
+
   return (
     <Styled.Wrapper>
       <Menu
@@ -39,6 +42,7 @@ export const BaseTemplate = ({
               type="search"
               placeholder="Buscar post"
               name="q"
+              defaultValue={router.query.q}
             />
           </form>
         </Styled.SearchContainer>
