@@ -17,7 +17,7 @@ export type PostGridProps = {
 };
 
 export const PostGrid = ({ posts = undefined }: PostGridProps) => {
-  if (typeof posts === 'undefined') {
+  if (typeof posts === 'undefined' || posts.data.length === 0) {
     return (
       <Styled.Wrapper>
         <Styled.NotFound>Nenhum post encontrado aqui =(</Styled.NotFound>
