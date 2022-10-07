@@ -16,7 +16,7 @@ export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
       <DiscussionEmbed
         shortname="my-space-blog"
         config={{
-          url: `/post/${slug}`,
+          url: `https://my-space-blog.vercel.app/post/${slug}/`,
           identifier: id,
           title: title,
           language: 'pt_BR',
