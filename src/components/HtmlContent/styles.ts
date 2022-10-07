@@ -61,6 +61,7 @@ export const Container = styled.div`
 
     .image figcaption {
       font-size: ${theme.font.sizes.small};
+      color: #000000;
       padding: ${theme.spacings.small};
       text-align: center;
       line-height: 1.3;

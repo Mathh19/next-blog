@@ -22,7 +22,7 @@ exports[`<PostTags /> > should match snapshot 1`] = `
 }
 
 .c0 a {
-  color: #E94560;
+  color: #7858A6;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;
@@ -86,7 +86,7 @@ exports[`<PostTags /> > should no tags 1`] = `
 }
 
 .c0 a {
-  color: #E94560;
+  color: #7858A6;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;

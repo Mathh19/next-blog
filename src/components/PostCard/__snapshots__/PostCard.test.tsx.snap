@@ -23,7 +23,7 @@ exports[`<PostCard /> > should match snapshot 1`] = `
 }
 
 .c0:hover a {
-  color: #E94560;
+  color: #7858A6;
 }
 
 .c0:hover img {

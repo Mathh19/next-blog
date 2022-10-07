@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.a`
   ${({ theme }) => css`
     display: block;
-    color: ${theme.colors.white};
+    color: #FFFFFF;
     text-decoration: none;
     margin-bottom: ${theme.spacings.small};
     font-size: 1.8rem;

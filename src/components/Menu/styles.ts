@@ -12,7 +12,7 @@ const wrapperChanger = (menuVisible: MenuBehaviourProps['menuVisible']) => css`
 
 export const Wrapper = styled.div<MenuBehaviourProps>`
   ${({ theme, menuVisible }) => css`
-    background: ${theme.colors.primary};
+    background: ${theme.colors.bgMenu};
     padding: ${theme.spacings.large};
     display: flex;
     position: fixed;
@@ -44,7 +44,7 @@ export const Wrapper = styled.div<MenuBehaviourProps>`
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #720d1e;
+      background: #503a70;
     }
   `}
 `;
@@ -74,7 +74,7 @@ const buttonChanger = (
   theme: DefaultTheme,
 ) => css`
   left: ${menuVisible ? '26rem' : '1rem'};
-  color: ${menuVisible ? theme.colors.secondary : theme.colors.white};
+  color: ${theme.colors.secondary};
 
   @media ((max-width: 300px)) {
     left: ${menuVisible ? '23rem' : '1rem'};
@@ -86,7 +86,7 @@ export const OpenClose = styled.a<MenuBehaviourProps>`
     position: fixed;
     top: ${theme.spacings.medium};
     color: ${theme.colors.white};
-    background: ${theme.colors.primary};
+    background: #082032;
     z-index: 2;
     width: 3rem;
     height: 3rem;

@@ -48,7 +48,7 @@ export type LoadPostsVariables = {
 export const defaultLoadPostsVariables: LoadPostsVariables = {
   sort: 'createdAt:desc',
   start: 0,
-  limit: 2,
+  limit: 6,
 };
 
 export const loadPosts = async (

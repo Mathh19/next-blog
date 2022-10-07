@@ -1,10 +1,12 @@
 export const theme = {
+  name: 'default',
   colors: {
     primary: '#082032',
-    secondary: '#E94560',
+    secondary: '#7858A6',
     darkText: '#333333',
     black: '#000000',
     white: '#FFFFFF',
+    bgMenu: '#082032',
     mediumGray: '#DDDDDD',
     darkGray: '#AAAAAA',
   },
@@ -41,4 +43,4 @@ export const theme = {
     max: '96rem',
     content: '80rem',
   },
-} as const;
+};

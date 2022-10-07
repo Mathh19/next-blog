@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 export const Container = styled.a`
   ${({ theme }) => css`
     position: fixed;
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.white};
+    background-color: #082032;
+    color: ${theme.colors.secondary};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,10 +15,10 @@ export const Container = styled.a`
     z-index: 6;
     opacity: 0.7;
     border-radius: 50%;
-    border: 0.1rem solid #fff;
+    border: 0.2rem solid ${theme.colors.secondary};
     &:hover {
       transition: 500ms ease-in-out all;
-      background-color: ${theme.colors.darkText};
+      background-color: #12324a;
       opacity: unset;
     }
   `}
