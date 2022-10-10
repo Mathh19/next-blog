@@ -1,6 +1,6 @@
 import * as Styled from './styles';
 import { useState, useContext, useEffect } from 'react';
-import { BlogThemeContext } from 'contexts/BlogThemeContext';
+import { BlogThemeContext } from '../../contexts/BlogThemeContext';
 
 export const ToggleTheme = () => {
   const { setTheme } = useContext(BlogThemeContext);

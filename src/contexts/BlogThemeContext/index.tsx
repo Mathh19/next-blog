@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { theme } from 'styles/theme';
+import { theme } from '../../styles/theme';
 
 export type BlogThemeProviderProps = {
   children: React.ReactNode;
