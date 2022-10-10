@@ -14,7 +14,17 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['../.test/setup.js'],
     include: ['**/*(*.)?{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    exclude: ['node_modules', 'dist', '.idea', '.git', '.cache', 'templates'],
+    exclude: [
+      'node_modules',
+      'dist',
+      '.idea',
+      '.git',
+      '.cache',
+      'templates',
+      'contexts',
+      'graphql',
+      '!<rootDir>/src/componets/Comments/**/*.{ts, tsx}',
+    ],
     // coverage: {
     //   reporter: ['clover', 'json', 'lcov'],
     // },
