@@ -1,6 +1,17 @@
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  svg.search-ok-icon,
+  svg.search-cancel-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1rem;
+  }
+
+  svg.search-cancel-icon {
+      color: crimson;
+  }
+`;
 
 export const HeaderContainer = styled.div`
   ${({ theme }) => css`
@@ -24,7 +35,22 @@ export const SearchContainer = styled.div`
 
 export const SearchInput = styled.input`
   ${({ theme }) => css`
+    width: 32rem;
+    outline: 0;
     padding: 0.5rem ${theme.spacings.small};
+    color: ${theme.colors.primary};
+    border: none;
+    border-bottom: 2px solid ${theme.colors.darkGray};
+    background-color: transparent;
+    font-size: ${theme.font.sizes.small};
+
+    &:focus {
+      border-bottom: 2px solid ${theme.colors.secondary};
+    }
+
+    &:disabled {
+      border-bottom: 2px solid crimson;
+    }
   `}
 `;
 

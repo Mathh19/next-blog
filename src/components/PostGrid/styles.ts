@@ -10,7 +10,7 @@ export const NotFound = styled.p`
     text-align: center;
     font-size: ${theme.font.sizes.medium};
     font-weight: 700;
-    color: ${theme.colors.secondary};
+    color: crimson;
   `}
 `;
 

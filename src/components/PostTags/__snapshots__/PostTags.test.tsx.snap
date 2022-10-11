@@ -36,6 +36,12 @@ exports[`<PostTags /> > should match snapshot 1`] = `
   filter: brightness(50%);
 }
 
+@media (max-width:768px) {
+  .c0 {
+    padding: 0;
+  }
+}
+
 <div>
   <p
     class="c0"
@@ -100,6 +106,12 @@ exports[`<PostTags /> > should no tags 1`] = `
 .c0 a:hover {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
+}
+
+@media (max-width:768px) {
+  .c0 {
+    padding: 0;
+  }
 }
 
 <div>

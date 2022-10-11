@@ -14,7 +14,7 @@ export type PostTemplateProps = {
 
 export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
   return (
-    <BaseTemplate settings={settings} displaySearch={false}>
+    <BaseTemplate settings={settings} displaySearch={true}>
       <Post {...post} />
 
       <Styled.TagsContainer>
