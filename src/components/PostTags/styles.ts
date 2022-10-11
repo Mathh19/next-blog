@@ -31,5 +31,9 @@ export const Wrapper = styled.p`
         filter: brightness(50%);
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      padding: 0;
+    }
   `}
 `;
