@@ -1,8 +1,8 @@
-import config from 'config';
+import config from '../config';
 import { request } from 'graphql-request';
-import { GRAPHQL_QUERY } from 'graphql/queries';
-import { PostStrapi } from 'shared-types/post-strapi';
-import { SettingsStrapi } from 'shared-types/settings-strapi';
+import { GRAPHQL_QUERY } from '../graphql/queries';
+import { PostStrapi } from '../shared-types/post-strapi';
+import { SettingsStrapi } from '../shared-types/settings-strapi';
 
 type StringFilterInput = {
   and?: [string];
