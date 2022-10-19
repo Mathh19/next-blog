@@ -130,8 +130,8 @@ exports[`<HtmlContent /> > it should match snapshot 1`] = `
 <div
   class="c0"
 >
-  <b>
+  <h3>
     Children
-  </b>
+  </h3>
 </div>
 `;
