@@ -9,7 +9,15 @@ export type CommentsProps = {
 };
 
 export const Comments = ({ id, slug, title, allowComments }: CommentsProps) => {
-  if (!allowComments) return null;
+  if (!allowComments) {
+    return (
+      <Styled.Wrapper>
+        <Styled.NoComments>
+          <p>Comentários estão desativados para este post.</p>
+        </Styled.NoComments>
+      </Styled.Wrapper>
+    );
+  }
 
   return (
     <Styled.Wrapper>

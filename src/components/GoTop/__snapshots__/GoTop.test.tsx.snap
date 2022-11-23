@@ -4,7 +4,7 @@ exports[`<GoTop /> > should render a go to top button 1`] = `
 .c0 {
   position: fixed;
   background-color: #082032;
-  color: #7858A6;
+  color: #DC143C;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,7 +24,7 @@ exports[`<GoTop /> > should render a go to top button 1`] = `
   z-index: 6;
   opacity: 0.7;
   border-radius: 50%;
-  border: 0.2rem solid #7858A6;
+  border: 0.2rem solid #DC143C;
 }
 
 .c0:hover {
@@ -60,7 +60,7 @@ exports[`<GoTop /> > should render a go to top button 1`] = `
         fill="none"
       />
       <path
-        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
       />
     </svg>
   </a>

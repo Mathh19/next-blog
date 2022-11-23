@@ -32,6 +32,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
         <Head />
         <body>
           <Main />

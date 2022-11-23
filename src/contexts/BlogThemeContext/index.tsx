@@ -36,7 +36,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
           name: 'dark',
           colors: {
             primary: '#FFFFFF',
-            secondary: '#7858A6',
+            secondary: '#DC143C',
             bgMenu: '#12324a',
             darkText: '#F9F9F9',
             black: '#000000',

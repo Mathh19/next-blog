@@ -23,7 +23,7 @@ exports[`<PostGrid /> > should match snapshot 1`] = `
 }
 
 .c2:hover a {
-  color: #7858A6;
+  color: #DC143C;
 }
 
 .c2:hover img {

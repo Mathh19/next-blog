@@ -11,7 +11,7 @@ exports[`<HtmlContent /> > it should match snapshot 1`] = `
 }
 
 .c0 a {
-  color: #7858A6;
+  color: #DC143C;
 }
 
 .c0 a:visited,
@@ -106,7 +106,7 @@ exports[`<HtmlContent /> > it should match snapshot 1`] = `
 }
 
 .c0 blockquote {
-  border-left: 0.5rem solid #7858A6;
+  border-left: 0.5rem solid #DC143C;
   color: #AAAAAA;
   -webkit-filter: brightness(80%);
   filter: brightness(80%);

@@ -20,7 +20,7 @@ exports[`<ToggleTheme /> > should render input and toggle between theme when tog
 }
 
 .c5:checked + .c3 {
-  background-color: #7858A6;
+  background-color: #DC143C;
 }
 
 .c5:focus + .c3 {
@@ -44,7 +44,7 @@ exports[`<ToggleTheme /> > should render input and toggle between theme when tog
 }
 
 .c2:checked + .c3 {
-  background-color: #7858A6;
+  background-color: #DC143C;
 }
 
 .c2:focus + .c3 {
@@ -69,7 +69,7 @@ exports[`<ToggleTheme /> > should render input and toggle between theme when tog
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   border-radius: 2rem;
-  border: 1px solid #7858A6;
+  border: 1px solid #DC143C;
 }
 
 .c4:before {

@@ -62,8 +62,8 @@ describe('<MenuLink />', () => {
       }
 
       .c0:hover {
-        border-right: 0.5rem solid #7858A6;
-        color: #7858A6;
+        border-right: 0.5rem solid #DC143C;
+        color: #DC143C;
       }
 
       <a

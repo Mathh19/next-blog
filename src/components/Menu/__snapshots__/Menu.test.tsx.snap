@@ -26,10 +26,10 @@ exports[`<Menu /> > should match snapshot 1`] = `
   transition: all 400ms ease-in-out;
   overflow-y: auto;
   box-shadow: 5px 0 10px -2px #000000;
-  -webkit-scrollbar-color: #7858A6 #082032;
-  -moz-scrollbar-color: #7858A6 #082032;
-  -ms-scrollbar-color: #7858A6 #082032;
-  scrollbar-color: #7858A6 #082032;
+  -webkit-scrollbar-color: #DC143C #082032;
+  -moz-scrollbar-color: #DC143C #082032;
+  -ms-scrollbar-color: #DC143C #082032;
+  scrollbar-color: #DC143C #082032;
   -webkit-scrollbar-width: thin;
   -moz-scrollbar-width: thin;
   -ms-scrollbar-width: thin;
@@ -47,7 +47,7 @@ exports[`<Menu /> > should match snapshot 1`] = `
 }
 
 .c2::-webkit-scrollbar-thumb {
-  background: #7858A6;
+  background: #DC143C;
   border-radius: 10px;
 }
 
@@ -74,7 +74,7 @@ exports[`<Menu /> > should match snapshot 1`] = `
 }
 
 .c4 img {
-  border: 0.5rem solid #7858A6;
+  border: 0.5rem solid #DC143C;
 }
 
 .c0 {
@@ -90,7 +90,7 @@ exports[`<Menu /> > should match snapshot 1`] = `
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
   left: 1rem;
-  color: #7858A6;
+  color: #DC143C;
 }
 
 .c1 {
@@ -131,8 +131,8 @@ exports[`<Menu /> > should match snapshot 1`] = `
 }
 
 .c8:hover {
-  border-right: 0.5rem solid #7858A6;
-  color: #7858A6;
+  border-right: 0.5rem solid #DC143C;
+  color: #DC143C;
 }
 
 @media ((max-width:300px)) {

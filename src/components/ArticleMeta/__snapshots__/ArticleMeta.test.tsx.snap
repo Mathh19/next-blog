@@ -16,7 +16,7 @@ exports[`<ArticleMeta /> > should match snapshot 1`] = `
 }
 
 .c0 a {
-  color: #7858A6;
+  color: #DC143C;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;
@@ -95,7 +95,7 @@ exports[`<ArticleMeta /> > should no author and no categories 1`] = `
 }
 
 .c0 a {
-  color: #7858A6;
+  color: #DC143C;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;

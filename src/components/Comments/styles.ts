@@ -8,3 +8,11 @@ export const Wrapper = styled.div`
     padding: 0 ${theme.spacings.large};
   `}
 `;
+
+export const NoComments = styled.div`
+  ${({ theme }) => css`
+    text-align: center;
+    color: ${theme.colors.secondary};
+    font-size: ${theme.font.sizes.medium};
+  `}
+`;

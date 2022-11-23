@@ -37,7 +37,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
 }
 
 .c7 a {
-  color: #7858A6;
+  color: #DC143C;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 300ms ease-in-out;
@@ -92,7 +92,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
 }
 
 .c9 a {
-  color: #7858A6;
+  color: #DC143C;
 }
 
 .c9 a:visited,
@@ -187,7 +187,7 @@ exports[`<Post /> > should render header, excerpt, cover, metadata and post 1`] 
 }
 
 .c9 blockquote {
-  border-left: 0.5rem solid #7858A6;
+  border-left: 0.5rem solid #DC143C;
   color: #AAAAAA;
   -webkit-filter: brightness(80%);
   filter: brightness(80%);
