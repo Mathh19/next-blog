@@ -11,13 +11,12 @@ export default function PostPage({ posts, setting }: StrapiPostAndSettings) {
     return <h1>Loading...</h1>;
   }
   const post = posts.data[0];
+  const titlePost = `${post.attributes.title} - ${setting.data.attributes.blogName}`;
 
   return (
     <>
       <Head>
-        <title>
-          {`${post.attributes.title} - ${setting.data.attributes.blogName}`}
-        </title>
+        <title>{titlePost}</title>
         <meta name="description" content={post.attributes.excerpt} />
       </Head>
       <PostTemplate post={posts} settings={setting} />

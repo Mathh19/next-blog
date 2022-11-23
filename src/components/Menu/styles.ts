@@ -44,7 +44,7 @@ export const Wrapper = styled.div<MenuBehaviourProps>`
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #503a70;
+      background: #B21031;
     }
   `}
 `;

@@ -52,7 +52,7 @@ exports[`<Menu /> > should match snapshot 1`] = `
 }
 
 .c2::-webkit-scrollbar-thumb:hover {
-  background: #503a70;
+  background: #B21031;
 }
 
 .c3 {
