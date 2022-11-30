@@ -34,6 +34,7 @@ exports[`<PostCard /> > should match snapshot 1`] = `
   max-width: 100%;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
+  border: 1px solid #082032;
 }
 
 <div>

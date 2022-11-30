@@ -26,8 +26,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Cover = styled.img`
+    ${({ theme }) => css`
     max-width: 100%;
     transition: opacity 300ms ease-in-out;
+    border: 1px solid ${theme.colors.primary};
+    `}
 `;
 
 export const Excerpt = styled.p``;
