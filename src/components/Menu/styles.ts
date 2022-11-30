@@ -10,6 +10,14 @@ const wrapperChanger = (menuVisible: MenuBehaviourProps['menuVisible']) => css`
   overflow-y: ${menuVisible ? 'auto' : 'hidden'};
 `;
 
+export const TextArea = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.deepWhite};
+    font-size: ${theme.font.sizes.large};
+    margin-bottom: ${theme.spacings.small};
+  `}
+`;
+
 export const Wrapper = styled.div<MenuBehaviourProps>`
   ${({ theme, menuVisible }) => css`
     background: ${theme.colors.bgMenu};

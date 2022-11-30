@@ -43,7 +43,7 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
           <Styled.Logo>
             <LogoLink link="/" text={blogName} srcImg={logo} />
           </Styled.Logo>
-
+          <Styled.TextArea>Social</Styled.TextArea>
           {links.map((link) => (
             <MenuLink key={link.id} link={link.link} newTab={link.newTab}>
               {link.text}

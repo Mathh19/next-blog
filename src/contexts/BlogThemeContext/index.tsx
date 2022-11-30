@@ -41,6 +41,7 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
             darkText: '#F9F9F9',
             black: '#000000',
             white: '#082032',
+            deepWhite: 'rgb(255, 255, 255)',
             mediumGray: '#F9F9F9',
             darkGray: '#CCCCCC',
           },

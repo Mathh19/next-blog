@@ -60,13 +60,11 @@ export const BaseTemplate = ({
   return (
     <Styled.Wrapper>
       <ToggleTheme />
-
       <Menu
         links={settings.data.attributes.menuLink}
         blogName={settings.data.attributes.blogName}
         logo={settings.data.attributes.logo.data.attributes.url}
       />
-
       <Styled.HeaderContainer>
         <Header
           title={settings.data.attributes.blogName}
@@ -74,7 +72,6 @@ export const BaseTemplate = ({
           srcImg={settings.data.attributes.logo.data.attributes.url}
         />
       </Styled.HeaderContainer>
-
       {displaySearch ? (
         <Styled.SearchContainer>
           <Styled.SearchInput
@@ -98,13 +95,10 @@ export const BaseTemplate = ({
           )}
         </Styled.SearchContainer>
       ) : null}
-
       <Styled.ContentContainer>{children}</Styled.ContentContainer>
-
       <Styled.FooterContainer>
         <Footer footerHtml={settings.data.attributes.footer} />
       </Styled.FooterContainer>
-
       <GoTop />
     </Styled.Wrapper>
   );

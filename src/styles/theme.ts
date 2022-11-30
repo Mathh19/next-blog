@@ -6,6 +6,7 @@ export const theme = {
     darkText: '#333333',
     black: '#000000',
     white: '#FFFFFF',
+    deepWhite: 'rgb(255, 255, 255)',
     bgMenu: '#082032',
     mediumGray: '#DDDDDD',
     darkGray: '#AAAAAA',
