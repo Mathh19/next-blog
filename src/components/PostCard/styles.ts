@@ -30,6 +30,12 @@ export const Cover = styled.img`
     max-width: 100%;
     transition: opacity 300ms ease-in-out;
     border: 1px solid ${theme.colors.primary};
+    border-radius: 4px;
+    transition: all ease-in-out 300ms;
+
+    :hover {
+      border: 1px solid ${theme.colors.secondary};
+    }
     `}
 `;
 
