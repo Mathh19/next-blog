@@ -1,6 +1,6 @@
 export default {
-  url: 'https://strapi-space-blog.herokuapp.com',
+  url: 'https://strapi-blog-production-20f8.up.railway.app',
   siteName: 'Matheus',
   defaultSlug: 'space-blog',
-  graphqlURL: 'https://strapi-space-blog.herokuapp.com/graphql',
+  graphqlURL: 'https://strapi-blog-production-20f8.up.railway.app/graphql',
 };
