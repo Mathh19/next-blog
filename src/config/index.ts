@@ -1,6 +1,6 @@
 export default {
-  url: 'https://strapi-blog-production-20f8.up.railway.app',
+  url: process.env.MAIN_URL,
   siteName: 'Matheus',
   defaultSlug: 'space-blog',
-  graphqlURL: 'https://strapi-blog-production-20f8.up.railway.app/graphql',
+  graphqlURL: process.env.URL_GRAPHQL,
 };
